@@ -1,24 +1,28 @@
 import React from "react";
 
 const draw = {
-  "Round of 32": [
-    { p1: "A. Tabilo (1)", p2: "Bye", winner: 1 },
-    { p1: "A. Walton", p2: "J. Borges", winner: 2 },
-    { p1: "L. Klein", p2: "M. Galarneau", winner: 1 },
-    { p1: "H. Grenier", p2: "T. Fabbiano", winner: 1 }
-  ],
   "Round of 16": [
-    { p1: "A. Tabilo (1)", p2: "J. Borges", winner: 1 },
-    { p1: "L. Klein", p2: "H. Grenier", winner: 2 }
+    { p1: "L. Musetti (1)", p2: "T. Paul", winner: 1 },
+    { p1: "B. Shelton", p2: "N. Jarry", winner: 2 },
+    { p1: "F. Auger-Aliassime", p2: "H. Rune", winner: 1 },
+    { p1: "K. Khachanov", p2: "A. de Minaur", winner: 2 },
+    { p1: "J. Sinner (2)", p2: "A. Rublev", winner: 1 },
+    { p1: "S. Tsitsipas", p2: "C. Ruud", winner: 2 },
+    { p1: "D. Medvedev", p2: "T. Fritz", winner: 1 },
+    { p1: "C. Alcaraz", p2: "A. Zverev", winner: 2 }
   ],
   Quarterfinals: [
-    { p1: "A. Tabilo (1)", p2: "H. Grenier", winner: 1 }
+    { p1: "L. Musetti (1)", p2: "N. Jarry", winner: 2 },
+    { p1: "F. Auger-Aliassime", p2: "A. de Minaur", winner: 2 },
+    { p1: "J. Sinner (2)", p2: "C. Ruud", winner: 1 },
+    { p1: "D. Medvedev", p2: "A. Zverev", winner: 2 }
   ],
   Semifinals: [
-    { p1: "A. Tabilo (1)", p2: "M. Uchida", winner: 1 }
+    { p1: "N. Jarry", p2: "A. de Minaur", winner: 2 },
+    { p1: "J. Sinner (2)", p2: "A. Zverev", winner: 1 }
   ],
   Final: [
-    { p1: "A. Tabilo (1)", p2: "J. Moro Canas", winner: 1 }
+    { p1: "A. de Minaur", p2: "J. Sinner (2)", winner: 2 }
   ]
 };
 
@@ -45,10 +49,8 @@ const DrawBracket = () => {
   return (
     <div className="min-h-screen bg-gray-100 font-sans p-6">
       <div className="max-w-6xl mx-auto">
-        <h1 className="text-2xl font-bold text-gray-800">Athens Challenger - Singles Draw</h1>
-        <p className="mt-2 text-sm text-gray-500">
-          Follow the path to the title with an ATP-inspired draw layout.
-        </p>
+        <h1 className="text-2xl font-bold text-gray-800">Round of 16 - Singles Draw</h1>
+        <p className="mt-2 text-sm text-gray-500">Sixteen players enter, one lifts the trophy.</p>
 
         <div className="mt-8 overflow-x-auto">
           <div className="flex gap-6 min-w-max pb-4">
